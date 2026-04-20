@@ -1,0 +1,13 @@
+//week09-2 好玩的程式設計 互動氣球
+//File-Preference 字型放大
+PImage img;//宣告變數(圖)
+void setup(){//設定的函式(做1次)
+  size(600,500);//設定視窗大小
+  img=loadImage("balloon.png");//讀入圖片
+}
+
+void draw(){//畫圖的函式(每秒60次)
+  background(#FFFFF2);//畫背景:淡黃色
+  image(img, mouseX-96/2, mouseY-132, 96 ,132);
+}//座標
+  
